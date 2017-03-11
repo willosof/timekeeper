@@ -1,0 +1,19 @@
+{
+  "name": "timekeeper",
+  "version": "1.0.0",
+  "description": "Stage Timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willosof/timekeeper.git"
+  },
+  "author": "William Viker <william.viker@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willosof/timekeeper/issues"
+  },
+  "homepage": "https://github.com/willosof/timekeeper#readme"
+}
