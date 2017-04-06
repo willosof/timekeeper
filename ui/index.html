@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Timekeeper</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <webview id="settings" src="./settings.html" nodeintegration></webview>
+  </head>
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top" style="-webkit-app-region: drag">
+      <div class="container">
+        <div class="navbar-header">
+          <span class="navbar-brand">Timekeeper</span>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Displays <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="download">
+                <li><a href="http://jsfiddle.net/bootswatch/g1q7jxzf/">Close all</a></li>
+                <li class="divider"></li>
+                <li><a>Open <strong>1</strong> 1920x1080 50Hz</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a>00:00:00</a></li>
+            <li><a>Live</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="title-bar-btns">
+     <button id="min-btn">-</button>
+     <button id="max-btn">+</button>
+     <button id="close-btn">x</button>
+    </div>
+
+    <!-- /menu -->
+
+    <div class="container">
+
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+        <div class="tab-pane fade" id="tab2default">Default 2</div>
+        <div class="tab-pane fade" id="tab3default">Default 3</div>
+        <div class="tab-pane fade" id="tab4default">Default 4</div>
+        <div class="tab-pane fade" id="tab5default">Default 5</div>
+      </div>
+
+    </div>
+  </div>
+  </body>
+
+  <script>
+  </script>
+
+  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</html>

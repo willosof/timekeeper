@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/willosof/timekeeper/issues"
   },
-  "homepage": "https://github.com/willosof/timekeeper#readme"
+  "homepage": "https://github.com/willosof/timekeeper#readme",
+  "dependencies": {
+    "electron": "^1.6.2",
+    "electron-rpc": "^2.0.1",
+    "jquery": "^3.1.1"
+  }
 }

@@ -1,0 +1,16 @@
+#title-bar-btns button {
+	background-color:#ccc;
+	color: black;
+	padding:0px 4px;
+	font-size: 8px;
+  border-radius: 50%;
+	border: 1px solid #aaa;
+}
+
+#title-bar-btns {
+	position:fixed;
+	top: 45px;
+	left: 10px;
+	z-index:10;
+
+}
