@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/willosof/timekeeper#readme",
   "dependencies": {
+    "dateformat": "^2.0.0",
+    "debug": "^2.6.3",
+    "debug-electron": "0.0.4",
     "electron": "^1.6.2",
     "electron-rpc": "^2.0.1",
     "jquery": "^3.1.1"

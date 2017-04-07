@@ -6,14 +6,13 @@
     <title>Timekeeper</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <webview id="settings" src="./settings.html" nodeintegration></webview>
   </head>
 
   <body>
-    <div class="navbar navbar-default navbar-fixed-top" style="-webkit-app-region: drag">
-      <div class="container">
+    <div class="navbar navbar-default navbar-fixed-top" id="topmenu" style="-webkit-app-region: drag">
+      <div class="container" style="width:100%">
         <div class="navbar-header">
-          <span class="navbar-brand">Timekeeper</span>
+          <span class="navbar-brand" style="padding-left:70px !important;">Timekeeper</span>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -24,9 +23,9 @@
 
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Displays <span class="caret"></span></a>
-              <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="http://jsfiddle.net/bootswatch/g1q7jxzf/">Close all</a></li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="displays">Displays <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="displays">
+                <li><a id="windows_closeall">Close all</a></li>
                 <li class="divider"></li>
                 <li><a>Open <strong>1</strong> 1920x1080 50Hz</a></li>
               </ul>
@@ -34,8 +33,7 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a>00:00:00</a></li>
-            <li><a>Live</a></li>
+            <li><a id="masterclock_current">00:00:00</a></li>
           </ul>
 
         </div>
@@ -43,25 +41,72 @@
     </div>
 
     <div id="title-bar-btns">
-     <button id="min-btn">-</button>
-     <button id="max-btn">+</button>
-     <button id="close-btn">x</button>
+      <button id="close-btn">x</button>
+      <button id="min-btn">-</button>
+      <button id="max-btn">+</button>
     </div>
 
     <!-- /menu -->
 
-    <div class="container">
 
-      <div class="tab-content">
-        <div class="tab-pane fade in active" id="tab1default">Default 1</div>
-        <div class="tab-pane fade" id="tab2default">Default 2</div>
-        <div class="tab-pane fade" id="tab3default">Default 3</div>
-        <div class="tab-pane fade" id="tab4default">Default 4</div>
-        <div class="tab-pane fade" id="tab5default">Default 5</div>
-      </div>
 
+    <div class="container" style="width:100%;margin-top:70px">
+        <div class="row">
+        	<div class="col-md-9">
+                <div class="panel with-nav-tabs panel-default">
+                    <div class="panel-heading">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab1default" data-toggle="tab">Default 1</a></li>
+                                <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>
+                                <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>
+                                <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>
+                                        <li><a href="#tab5default" data-toggle="tab">Default 5</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab1default">Default 1</div>
+                            <div class="tab-pane fade" id="tab2default">Default 2</div>
+                            <div class="tab-pane fade" id="tab3default">Default 3</div>
+                            <div class="tab-pane fade" id="tab4default">Default 4</div>
+                            <div class="tab-pane fade" id="tab5default">Default 5</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="panel with-nav-tabs panel-primary">
+                    <div class="panel-heading">
+                      Timer 1
+                    </div>
+                    <div class="panel-body">
+                      <span class="bigtimer">00:00:00</span>
+                    </div>
+                </div>
+                <div class="panel with-nav-tabs panel-primary">
+                    <div class="panel-heading">
+                      Timer 2
+                    </div>
+                    <div class="panel-body">
+                      <span class="bigtimer">00:00:00</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+    	</div>
     </div>
-  </div>
+
+<!-- -------- -->
+
   </body>
 
   <script>

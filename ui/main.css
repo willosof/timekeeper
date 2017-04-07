@@ -1,16 +1,30 @@
+#topmenu {
+	z-index: 1;
+}
 #title-bar-btns button {
 	background-color:#ccc;
 	color: black;
 	padding:0px 4px;
 	font-size: 8px;
   border-radius: 50%;
-	border: 1px solid #aaa;
+	border: 0px solid #aaa;
 }
 
 #title-bar-btns {
 	position:fixed;
-	top: 45px;
+	top: 3px;
 	left: 10px;
-	z-index:10;
+	z-index:2;
+}
+#min-btn:hover {
+	background-color: amber;
+}
+#max-btn:hover {
+	background-color: green;
+}
+#close-btn:hover {
 
+}
+.bigtimer {
+	font-size: 40px;
 }
